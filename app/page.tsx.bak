@@ -23,8 +23,8 @@ const features = [
     name: 'VoiceLog™',
     tagline: 'Notes without typing.',
     desc: 'Speak your job notes hands-free on-site. AI cleans, structures, and saves them instantly — gloves on or off.',
-    color: 'from-blue-50 to-sky-50',
-    border: 'border-blue-100',
+    color: 'from-orange-50 to-amber-50',
+    border: 'border-orange-100',
   },
   {
     icon: '💰',
@@ -139,7 +139,7 @@ function useCountdown(target: Date) {
 
 function PhoneVoiceLog() {
   return (
-    <div className="w-full h-full bg-[#F8FAFC] flex flex-col text-[#1A1A1A]">
+    <div className="w-full h-full bg-[#F9F8F6] flex flex-col text-[#1A1A1A]">
       {/* Status */}
       <div className="flex justify-between px-4 pt-3 pb-1 text-[8px] text-gray-400">
         <span className="font-semibold">9:41</span>
@@ -149,21 +149,21 @@ function PhoneVoiceLog() {
       </div>
       {/* Header */}
       <div className="flex items-center gap-2 px-4 pb-3 border-b border-gray-100">
-        <div className="w-6 h-6 rounded-lg bg-blue-600 flex items-center justify-center text-[9px] font-black text-white">F</div>
+        <div className="w-6 h-6 rounded-lg bg-orange-500 flex items-center justify-center text-[9px] font-black text-white">F</div>
         <span className="font-bold text-[11px] text-gray-800">VoiceLog™</span>
-        <span className="ml-auto text-[8px] text-blue-600 font-semibold bg-blue-50 px-2 py-0.5 rounded-full">LIVE</span>
+        <span className="ml-auto text-[8px] text-orange-500 font-semibold bg-orange-50 px-2 py-0.5 rounded-full">LIVE</span>
       </div>
       {/* Content */}
       <div className="flex-1 px-4 py-3 flex flex-col gap-3">
         <div className="text-[8px] font-semibold text-gray-400 uppercase tracking-widest">Job #284 — In Progress</div>
         {/* Recording card */}
-        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-3">
+        <div className="bg-orange-50 border border-orange-200 rounded-2xl p-3">
           <div className="flex items-center gap-2 mb-2">
-            <div className="w-4 h-4 rounded-full bg-blue-600 flex items-center justify-center pulse-dot">
+            <div className="w-4 h-4 rounded-full bg-orange-500 flex items-center justify-center pulse-dot">
               <div className="w-1.5 h-1.5 rounded-full bg-white" />
             </div>
-            <span className="text-blue-700 text-[8px] font-bold">Recording...</span>
-            <span className="ml-auto text-blue-400 text-[8px] font-mono">0:47</span>
+            <span className="text-orange-600 text-[8px] font-bold">Recording...</span>
+            <span className="ml-auto text-orange-400 text-[8px] font-mono">0:47</span>
           </div>
           <p className="text-gray-700 text-[8px] leading-[14px]">
             "Replaced 40-gal Bradford White unit in basement. Added expansion tank. Customer approved PRO model upgrade on-site..."
@@ -171,7 +171,7 @@ function PhoneVoiceLog() {
           {/* Waveform */}
           <div className="flex items-center gap-[2px] mt-2 h-5">
             {[2,5,8,4,7,10,6,3,9,5,8,2,6,10,4,7,3,5,8,6,4,9,7,3].map((h, i) => (
-              <div key={i} className="w-[2.5px] rounded-full bg-blue-500" style={{ height: `${h}px` }} />
+              <div key={i} className="w-[2.5px] rounded-full bg-orange-400" style={{ height: `${h}px` }} />
             ))}
           </div>
         </div>
@@ -187,7 +187,7 @@ function PhoneVoiceLog() {
       </div>
       {/* Action */}
       <div className="px-4 pb-4">
-        <div className="bg-blue-600 rounded-xl py-2.5 text-center text-[9px] font-bold text-white shadow-md">
+        <div className="bg-orange-500 rounded-xl py-2.5 text-center text-[9px] font-bold text-white shadow-md">
           Save + Next Job →
         </div>
       </div>
@@ -197,13 +197,13 @@ function PhoneVoiceLog() {
 
 function PhoneQuickQuote() {
   return (
-    <div className="w-full h-full bg-[#F8FAFC] flex flex-col text-[#1A1A1A]">
+    <div className="w-full h-full bg-[#F9F8F6] flex flex-col text-[#1A1A1A]">
       <div className="flex justify-between px-4 pt-3 pb-1 text-[8px] text-gray-400">
         <span className="font-semibold">9:41</span>
         <div className="flex gap-1"><span>●●●●</span><span>WiFi</span><span>🔋</span></div>
       </div>
       <div className="flex items-center gap-2 px-4 pb-3 border-b border-gray-100">
-        <div className="w-6 h-6 rounded-lg bg-blue-600 flex items-center justify-center text-[9px] font-black text-white">F</div>
+        <div className="w-6 h-6 rounded-lg bg-orange-500 flex items-center justify-center text-[9px] font-black text-white">F</div>
         <span className="font-bold text-[11px] text-gray-800">QuickQuote™</span>
         <span className="ml-auto text-[8px] text-emerald-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded-full">AI · 28 sec</span>
       </div>
@@ -224,7 +224,7 @@ function PhoneQuickQuote() {
         </div>
         <div className="border-t border-gray-100 pt-2 flex justify-between items-center">
           <span className="text-[9px] font-semibold text-gray-500">Total</span>
-          <span className="text-[16px] font-black text-blue-600">$1,830</span>
+          <span className="text-[16px] font-black text-orange-500">$1,830</span>
         </div>
         <div className="bg-white border border-gray-100 rounded-xl p-2.5 card-shadow">
           <div className="text-[7px] text-gray-400 mb-1.5 font-semibold">Estimated Margin</div>
@@ -238,7 +238,7 @@ function PhoneQuickQuote() {
       </div>
       <div className="px-4 pb-4 flex gap-2">
         <div className="flex-1 bg-white border border-gray-200 rounded-xl py-2.5 text-center text-[8px] text-gray-500 font-semibold card-shadow">Edit</div>
-        <div className="flex-1 bg-blue-600 rounded-xl py-2.5 text-center text-[9px] font-bold text-white shadow-md">Send →</div>
+        <div className="flex-1 bg-orange-500 rounded-xl py-2.5 text-center text-[9px] font-bold text-white shadow-md">Send →</div>
       </div>
     </div>
   )
@@ -246,12 +246,12 @@ function PhoneQuickQuote() {
 
 function TabletDashboard() {
   return (
-    <div className="w-full h-full bg-[#F8FAFC] flex flex-col text-[#1A1A1A]">
+    <div className="w-full h-full bg-[#F9F8F6] flex flex-col text-[#1A1A1A]">
       {/* Status */}
       <div className="flex justify-between px-5 pt-3 pb-2 text-[8px] text-gray-400 border-b border-gray-100 bg-white">
         <span className="font-semibold">9:41 AM · Monday</span>
         <div className="flex items-center gap-2">
-          <div className="w-5 h-5 rounded-lg bg-blue-600 flex items-center justify-center text-[7px] font-black text-white">F</div>
+          <div className="w-5 h-5 rounded-lg bg-orange-500 flex items-center justify-center text-[7px] font-black text-white">F</div>
           <span className="font-bold text-[10px] text-gray-800">FLDWRK</span>
         </div>
         <div className="flex gap-1 text-[7px]"><span>●●●●</span><span>WiFi</span><span>🔋</span></div>
@@ -268,27 +268,27 @@ function TabletDashboard() {
             { icon: '🧠', label: 'TradeIQ', active: false },
             { icon: '🚚', label: 'Truck', active: false },
           ].map(item => (
-            <div key={item.label} className={`flex flex-col items-center gap-1 py-2 px-1 rounded-xl cursor-pointer ${item.active ? 'bg-blue-50' : 'hover:bg-gray-50'}`}>
+            <div key={item.label} className={`flex flex-col items-center gap-1 py-2 px-1 rounded-xl cursor-pointer ${item.active ? 'bg-orange-50' : 'hover:bg-gray-50'}`}>
               <span className="text-sm">{item.icon}</span>
-              <span className={`text-[6.5px] font-semibold ${item.active ? 'text-blue-700' : 'text-gray-400'}`}>{item.label}</span>
+              <span className={`text-[6.5px] font-semibold ${item.active ? 'text-orange-600' : 'text-gray-400'}`}>{item.label}</span>
             </div>
           ))}
         </div>
         {/* Main content */}
-        <div className="flex-1 p-3 flex flex-col gap-2 bg-[#F8FAFC] overflow-hidden">
+        <div className="flex-1 p-3 flex flex-col gap-2 bg-[#F9F8F6] overflow-hidden">
           <div className="flex items-center justify-between">
             <div>
               <div className="text-[9px] font-black text-gray-800">Good morning, Mike 👋</div>
               <div className="text-[7px] text-gray-400">Week of Apr 21 · 3 jobs today</div>
             </div>
-            <div className="bg-blue-600 text-white text-[7px] font-bold px-2.5 py-1.5 rounded-lg">+ New Job</div>
+            <div className="bg-orange-500 text-white text-[7px] font-bold px-2.5 py-1.5 rounded-lg">+ New Job</div>
           </div>
           {/* Stat cards */}
           <div className="grid grid-cols-3 gap-2">
             {[
               { label: 'This Week', value: '$9,840', delta: '↑ 18%', color: 'text-emerald-600' },
               { label: 'Jobs Done', value: '12', delta: '↑ 3 vs last wk', color: 'text-blue-500' },
-              { label: 'Avg Margin', value: '71%', delta: '↑ 4pts', color: 'text-blue-600' },
+              { label: 'Avg Margin', value: '71%', delta: '↑ 4pts', color: 'text-orange-500' },
             ].map(c => (
               <div key={c.label} className="bg-white rounded-2xl p-2.5 card-shadow">
                 <div className="text-[7px] text-gray-400 mb-0.5">{c.label}</div>
@@ -303,7 +303,7 @@ function TabletDashboard() {
             <div className="space-y-1.5">
               {[
                 { job: 'Water heater replacement', customer: 'Martinez Residence', status: 'Done', statusColor: 'bg-emerald-100 text-emerald-700', margin: '68%' },
-                { job: 'HVAC tune-up + filter swap', customer: 'Parkview Dental', status: 'Active', statusColor: 'bg-blue-100 text-blue-800', margin: '74%' },
+                { job: 'HVAC tune-up + filter swap', customer: 'Parkview Dental', status: 'Active', statusColor: 'bg-orange-100 text-orange-700', margin: '74%' },
                 { job: 'Gas line safety inspection', customer: 'Cornerstone Apts', status: 'Next', statusColor: 'bg-gray-100 text-gray-500', margin: '—' },
               ].map(j => (
                 <div key={j.job} className="flex items-center justify-between bg-gray-50 rounded-xl px-2.5 py-2">
@@ -323,11 +323,11 @@ function TabletDashboard() {
           <div className="bg-white rounded-2xl p-2.5 card-shadow">
             <div className="flex justify-between items-center mb-1.5">
               <span className="text-[7px] font-black text-gray-600 uppercase tracking-widest">Revenue (7d)</span>
-              <span className="text-[7px] font-bold text-blue-600">TradeIQ™</span>
+              <span className="text-[7px] font-bold text-orange-500">TradeIQ™</span>
             </div>
             <div className="flex items-end gap-1.5 h-10">
               {[40, 65, 45, 80, 55, 90, 72].map((h, i) => (
-                <div key={i} className="flex-1 rounded-sm transition-all" style={{ height: `${h}%`, background: i === 5 ? '#2563eb' : '#BFDBFE' }} />
+                <div key={i} className="flex-1 rounded-sm transition-all" style={{ height: `${h}%`, background: i === 5 ? '#f97316' : '#FED7AA' }} />
               ))}
             </div>
             <div className="flex justify-between text-[6.5px] text-gray-300 mt-1">
@@ -427,13 +427,13 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-[#F8FAFC] text-[#1A1A1A]">
+    <main className="min-h-screen bg-[#F9F8F6] text-[#1A1A1A]">
 
       {/* ── NAV ─────────────────────────────────────────── */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#E8E5E0]" style={{ boxShadow: '0 1px 8px rgba(0,0,0,0.05)' }}>
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-blue-600 flex items-center justify-center font-black text-sm text-white shadow-md">F</div>
+            <div className="w-8 h-8 rounded-xl bg-orange-500 flex items-center justify-center font-black text-sm text-white shadow-md">F</div>
             <span className="font-black text-lg tracking-tight text-gray-900">FLDWRK</span>
             <span className="text-xs text-gray-300 font-mono">.ai</span>
           </div>
@@ -445,7 +445,7 @@ export default function Home() {
           </div>
           <a
             href="#waitlist"
-            className="text-sm bg-blue-600 hover:bg-blue-500 text-white font-bold px-5 py-2.5 rounded-xl transition-colors shadow-md"
+            className="text-sm bg-orange-500 hover:bg-orange-400 text-white font-bold px-5 py-2.5 rounded-xl transition-colors shadow-md"
           >
             Join Waitlist →
           </a>
@@ -457,8 +457,8 @@ export default function Home() {
         <div className="max-w-5xl mx-auto text-center">
 
           {/* Launch badge */}
-          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-4 py-2 text-sm text-blue-700 font-semibold mb-8">
-            <span className="w-2 h-2 rounded-full bg-blue-600 pulse-dot inline-block" />
+          <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-full px-4 py-2 text-sm text-orange-600 font-semibold mb-8">
+            <span className="w-2 h-2 rounded-full bg-orange-500 pulse-dot inline-block" />
             Launching June 2026 · {spotsLeft} founding spots left
           </div>
 
@@ -477,7 +477,7 @@ export default function Home() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-16">
-            <a href="#waitlist" className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            <a href="#waitlist" className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
               Claim My Founding Spot →
             </a>
             <a href="#app-preview" className="inline-flex items-center justify-center gap-2 bg-white border border-[#E8E5E0] text-gray-700 font-semibold px-8 py-4 rounded-2xl text-base transition-all card-shadow hover:card-shadow-hover hover:-translate-y-0.5">
@@ -511,7 +511,7 @@ export default function Home() {
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3">The Problem</p>
+            <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-3">The Problem</p>
             <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight">
               Jobber was built for an office.<br />
               <span className="text-gray-400">You work in the field.</span>
@@ -556,7 +556,7 @@ export default function Home() {
       <section id="app-preview" className="py-24 px-6 bg-gradient-to-b from-white to-[#F9F8F6] border-t border-[#E8E5E0] overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3">App Preview</p>
+            <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-3">App Preview</p>
             <h2 className="text-4xl md:text-5xl font-black text-gray-900">Built for how you actually work.</h2>
             <p className="text-gray-500 mt-4 max-w-xl mx-auto">
               Voice-first on your phone. Full visibility on your iPad. Everything synced in real-time.
@@ -602,7 +602,7 @@ export default function Home() {
 
           {/* Ambient glow */}
           <div className="flex justify-center -mt-8 pointer-events-none">
-            <div className="w-[500px] h-16 bg-blue-200/40 blur-3xl rounded-full" />
+            <div className="w-[500px] h-16 bg-orange-200/40 blur-3xl rounded-full" />
           </div>
         </div>
       </section>
@@ -611,7 +611,7 @@ export default function Home() {
       <section id="how-it-works" className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3">How It Works</p>
+            <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-3">How It Works</p>
             <h2 className="text-4xl md:text-5xl font-black text-gray-900">Simple enough for any tradesperson.</h2>
             <p className="text-gray-400 mt-4">No training. No onboarding call. Just open it and talk.</p>
           </div>
@@ -632,7 +632,7 @@ export default function Home() {
       <section className="py-24 px-6 bg-white border-y border-[#E8E5E0]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3">Trade-Specific</p>
+            <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-3">Trade-Specific</p>
             <h2 className="text-4xl md:text-5xl font-black text-gray-900">Made for your exact job.</h2>
             <p className="text-gray-400 mt-4">We didn't build a generic tool. We built one for the trades.</p>
           </div>
@@ -643,8 +643,8 @@ export default function Home() {
                 key={t}
                 onClick={() => setActiveTab(t)}
                 className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === t
-                  ? 'bg-blue-600 text-white shadow-md'
-                  : 'bg-white border border-[#E8E5E0] text-gray-500 hover:border-blue-200 card-shadow'
+                  ? 'bg-orange-500 text-white shadow-md'
+                  : 'bg-white border border-[#E8E5E0] text-gray-500 hover:border-orange-200 card-shadow'
                 }`}
               >
                 {tradeProblems[t].icon} {t}
@@ -657,8 +657,8 @@ export default function Home() {
               <div className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Your pain points:</div>
               <div className="space-y-3">
                 {tradeProblems[activeTab].problems.map(p => (
-                  <div key={p} className="flex items-start gap-3 bg-[#F8FAFC] border border-[#E8E5E0] rounded-2xl px-4 py-3.5">
-                    <span className="text-blue-400 mt-0.5">→</span>
+                  <div key={p} className="flex items-start gap-3 bg-[#F9F8F6] border border-[#E8E5E0] rounded-2xl px-4 py-3.5">
+                    <span className="text-orange-400 mt-0.5">→</span>
                     <span className="text-sm text-gray-600">{p}</span>
                   </div>
                 ))}
@@ -666,7 +666,7 @@ export default function Home() {
             </div>
             <div>
               <div className="text-xs font-bold uppercase tracking-widest text-emerald-500 mb-4">FLDWRK solves it:</div>
-              <div className="bg-blue-50 border border-blue-100 rounded-2xl p-6">
+              <div className="bg-orange-50 border border-orange-100 rounded-2xl p-6">
                 <div className="text-4xl mb-4">{tradeProblems[activeTab].icon}</div>
                 <p className="text-gray-700 leading-relaxed">{tradeProblems[activeTab].solution}</p>
               </div>
@@ -679,7 +679,7 @@ export default function Home() {
       <section id="features" className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3">Features</p>
+            <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-3">Features</p>
             <h2 className="text-4xl md:text-5xl font-black text-gray-900">Everything you need. Nothing you don&apos;t.</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-5">
@@ -699,20 +699,20 @@ export default function Home() {
       <section className="py-24 px-6 bg-white border-t border-[#E8E5E0]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3">From the Field</p>
+            <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-3">From the Field</p>
             <h2 className="text-4xl font-black text-gray-900">Tradespeople are done with the old way.</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             {testimonials.map((t) => (
-              <div key={t.name} className="bg-[#F8FAFC] border border-[#E8E5E0] rounded-3xl p-7 card-shadow hover:card-shadow-hover hover:-translate-y-1 transition-all">
+              <div key={t.name} className="bg-[#F9F8F6] border border-[#E8E5E0] rounded-3xl p-7 card-shadow hover:card-shadow-hover hover:-translate-y-1 transition-all">
                 <div className="flex gap-0.5 mb-5">
                   {Array.from({ length: t.stars }).map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-sm">★</span>
+                    <span key={i} className="text-amber-400 text-sm">★</span>
                   ))}
                 </div>
                 <p className="text-gray-700 text-sm leading-relaxed mb-6 italic">&ldquo;{t.quote}&rdquo;</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center text-base">{t.trade}</div>
+                  <div className="w-9 h-9 rounded-full bg-orange-100 border border-orange-200 flex items-center justify-center text-base">{t.trade}</div>
                   <div>
                     <div className="font-bold text-sm text-gray-800">{t.name}</div>
                     <div className="text-xs text-gray-400">{t.role}</div>
@@ -727,7 +727,7 @@ export default function Home() {
       {/* ── PRICING ─────────────────────────────────────── */}
       <section id="pricing" className="py-24 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <p className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3">Pricing</p>
+          <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-3">Pricing</p>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">Simple. Flat. No surprises.</h2>
           <p className="text-gray-400 mb-14">Founding members lock in 40% off forever. No credit card to join.</p>
           <div className="grid md:grid-cols-3 gap-5 mb-6">
@@ -761,7 +761,7 @@ export default function Home() {
               <div
                 key={plan.name}
                 className={`rounded-3xl p-7 text-left relative ${plan.featured
-                  ? 'bg-blue-600 text-white blue-glow'
+                  ? 'bg-orange-500 text-white orange-glow'
                   : 'bg-white border border-[#E8E5E0] card-shadow'
                 }`}
               >
@@ -770,17 +770,17 @@ export default function Home() {
                     Most Popular
                   </div>
                 )}
-                <div className={`text-xs font-bold uppercase tracking-widest mb-1 ${plan.featured ? 'text-blue-100' : 'text-gray-400'}`}>{plan.name}</div>
+                <div className={`text-xs font-bold uppercase tracking-widest mb-1 ${plan.featured ? 'text-orange-100' : 'text-gray-400'}`}>{plan.name}</div>
                 <div className="flex items-end gap-2 mb-1">
                   <span className={`text-4xl font-black ${plan.featured ? 'text-white' : 'text-gray-900'}`}>{plan.founding}</span>
-                  <span className={`text-sm mb-1.5 line-through ${plan.featured ? 'text-blue-200' : 'text-gray-300'}`}>{plan.price}</span>
-                  <span className={`text-sm mb-1.5 ${plan.featured ? 'text-blue-200' : 'text-gray-400'}`}>/mo</span>
+                  <span className={`text-sm mb-1.5 line-through ${plan.featured ? 'text-orange-200' : 'text-gray-300'}`}>{plan.price}</span>
+                  <span className={`text-sm mb-1.5 ${plan.featured ? 'text-orange-200' : 'text-gray-400'}`}>/mo</span>
                 </div>
-                <p className={`text-xs mb-6 ${plan.featured ? 'text-blue-100' : 'text-gray-400'}`}>{plan.desc}</p>
+                <p className={`text-xs mb-6 ${plan.featured ? 'text-orange-100' : 'text-gray-400'}`}>{plan.desc}</p>
                 <ul className="space-y-2 mb-7">
                   {plan.features.map((f) => (
-                    <li key={f} className={`text-sm flex items-center gap-2 ${plan.featured ? 'text-blue-50' : 'text-gray-600'}`}>
-                      <span className={`text-xs font-bold ${plan.featured ? 'text-blue-200' : 'text-blue-400'}`}>✓</span>
+                    <li key={f} className={`text-sm flex items-center gap-2 ${plan.featured ? 'text-orange-50' : 'text-gray-600'}`}>
+                      <span className={`text-xs font-bold ${plan.featured ? 'text-orange-200' : 'text-orange-400'}`}>✓</span>
                       {f}
                     </li>
                   ))}
@@ -788,8 +788,8 @@ export default function Home() {
                 <a
                   href="#waitlist"
                   className={`block text-center py-3 rounded-xl text-sm font-bold transition-all ${plan.featured
-                    ? 'bg-white text-blue-600 hover:bg-blue-50'
-                    : 'bg-blue-600 text-white hover:bg-blue-500 shadow-md'
+                    ? 'bg-white text-orange-500 hover:bg-orange-50'
+                    : 'bg-orange-500 text-white hover:bg-orange-400 shadow-md'
                   }`}
                 >
                   {plan.cta} →
@@ -804,7 +804,7 @@ export default function Home() {
       {/* ── COUNTDOWN ───────────────────────────────────── */}
       <section className="py-24 px-6 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-blue-400 text-sm font-bold uppercase tracking-widest mb-4">Launching June 2026</p>
+          <p className="text-orange-400 text-sm font-bold uppercase tracking-widest mb-4">Launching June 2026</p>
           <h2 className="text-4xl md:text-5xl font-black mb-4">The clock is ticking.</h2>
           <p className="text-gray-400 mb-12 max-w-lg mx-auto">
             We&apos;re heads-down building. Founding members get in first — and their 40% discount is locked forever.
@@ -824,7 +824,7 @@ export default function Home() {
           </div>
           <a
             href="#waitlist"
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-10 py-4 rounded-2xl text-base transition-all shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-10 py-4 rounded-2xl text-base transition-all shadow-lg hover:shadow-xl"
           >
             Secure My Founding Spot →
           </a>
@@ -832,7 +832,7 @@ export default function Home() {
       </section>
 
       {/* ── WAITLIST ────────────────────────────────────── */}
-      <section id="waitlist" className="py-24 px-6 bg-[#F8FAFC]">
+      <section id="waitlist" className="py-24 px-6 bg-[#F9F8F6]">
         <div className="max-w-xl mx-auto">
           {submitted ? (
             <div className="text-center">
@@ -863,7 +863,7 @@ export default function Home() {
           ) : (
             <>
               <div className="text-center mb-10">
-                <p className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3">Early Access</p>
+                <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-3">Early Access</p>
                 <h2 className="text-4xl font-black mb-4 text-gray-900">Get in before we launch.</h2>
                 <p className="text-gray-500">
                   Founding members get 40% off forever, direct access to the product team, and help shape what we build.
@@ -881,7 +881,7 @@ export default function Home() {
                       })}
                       type="email"
                       placeholder="you@yourcompany.com"
-                      className="w-full bg-[#F8FAFC] border border-[#E8E5E0] rounded-xl px-4 py-3.5 text-gray-800 placeholder-gray-300 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition-all text-sm"
+                      className="w-full bg-[#F9F8F6] border border-[#E8E5E0] rounded-xl px-4 py-3.5 text-gray-800 placeholder-gray-300 focus:outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 transition-all text-sm"
                     />
                     {errors.email && <p className="text-red-400 text-xs mt-1">{errors.email.message}</p>}
                   </div>
@@ -890,7 +890,7 @@ export default function Home() {
                     <label className="block text-sm font-semibold text-gray-700 mb-2">What&apos;s your trade?</label>
                     <select
                       {...register('trade', { required: true })}
-                      className="w-full bg-[#F8FAFC] border border-[#E8E5E0] rounded-xl px-4 py-3.5 text-gray-800 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition-all text-sm"
+                      className="w-full bg-[#F9F8F6] border border-[#E8E5E0] rounded-xl px-4 py-3.5 text-gray-800 focus:outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 transition-all text-sm"
                     >
                       <option value="">Select your trade</option>
                       {trades.map(t => <option key={t} value={t}>{t}</option>)}
@@ -903,9 +903,9 @@ export default function Home() {
                       {teamSizes.map(size => (
                         <label
                           key={size}
-                          className="flex items-center gap-3 bg-[#F8FAFC] border border-[#E8E5E0] rounded-xl px-4 py-3 cursor-pointer hover:border-blue-300 hover:bg-blue-50/50 transition-all has-[:checked]:border-blue-500 has-[:checked]:bg-blue-50"
+                          className="flex items-center gap-3 bg-[#F9F8F6] border border-[#E8E5E0] rounded-xl px-4 py-3 cursor-pointer hover:border-orange-300 hover:bg-orange-50/50 transition-all has-[:checked]:border-orange-400 has-[:checked]:bg-orange-50"
                         >
-                          <input {...register('teamSize', { required: true })} type="radio" value={size} className="accent-blue-600" />
+                          <input {...register('teamSize', { required: true })} type="radio" value={size} className="accent-orange-500" />
                           <span className="text-sm font-medium text-gray-600">{size}</span>
                         </label>
                       ))}
@@ -915,7 +915,7 @@ export default function Home() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-blue-600 hover:bg-blue-500 disabled:bg-blue-300 text-white font-black py-4 rounded-xl text-base transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+                    className="w-full bg-orange-500 hover:bg-orange-400 disabled:bg-orange-300 text-white font-black py-4 rounded-xl text-base transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
                   >
                     {loading ? 'Locking in your spot...' : 'Secure My Founding Spot →'}
                   </button>
@@ -935,7 +935,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
             <div className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center font-black text-xs text-white">F</div>
+              <div className="w-7 h-7 rounded-lg bg-orange-500 flex items-center justify-center font-black text-xs text-white">F</div>
               <span className="font-black text-base text-gray-900">FLDWRK</span>
               <span className="text-gray-300 text-xs font-mono">.ai</span>
             </div>
