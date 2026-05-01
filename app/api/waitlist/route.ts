@@ -18,10 +18,10 @@ export async function POST(req: NextRequest) {
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F9F8F6; padding: 32px; max-width: 520px; margin: 0 auto;">
           <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 24px;">
-            <div style="background: #F97316; width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center;">
+            <div style="background: #E8352A; width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center;">
               <span style="font-weight: 900; font-size: 16px; color: #fff;">F</span>
             </div>
-            <span style="font-weight: 900; font-size: 18px; color: #1A1A1A;">FLDWRK</span>
+            <span style="font-weight: 900; font-size: 18px; color: #0A0A0A; letter-spacing: -0.5px;">FLDWRK</span>
           </div>
           <h2 style="color: #1A1A1A; margin: 0 0 8px; font-size: 22px; font-weight: 900;">New Founding Member 🎉</h2>
           <p style="color: #6B7280; font-size: 14px; margin: 0 0 24px;">Someone just joined the waitlist.</p>
@@ -45,22 +45,22 @@ export async function POST(req: NextRequest) {
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F9F8F6; padding: 40px; max-width: 520px; margin: 0 auto;">
           <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 32px;">
-            <div style="background: #F97316; width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center;">
+            <div style="background: #E8352A; width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center;">
               <span style="font-weight: 900; font-size: 16px; color: #fff;">F</span>
             </div>
-            <span style="font-weight: 900; font-size: 18px; color: #1A1A1A;">FLDWRK</span>
+            <span style="font-weight: 900; font-size: 18px; color: #0A0A0A; letter-spacing: -0.5px;">FLDWRK</span>
           </div>
 
           <h1 style="font-size: 32px; font-weight: 900; margin: 0 0 12px; color: #1A1A1A;">You're in. 🎉</h1>
 
           <p style="color: #6B7280; line-height: 1.7; margin: 0 0 16px; font-size: 15px;">
-            You're officially on the <strong style="color: #1A1A1A;">FLDWRK founding member waitlist</strong>.
+            You're officially on the <strong style="color: #0A0A0A; letter-spacing: -0.5px;">FLDWRK founding member waitlist</strong>.
             That means early access, 40% off your subscription forever, and a direct line to the product team.
           </p>
 
-          <div style="background: #FFF4ED; border: 1px solid #FED7AA; border-radius: 16px; padding: 20px; margin: 24px 0;">
-            <p style="margin: 0; color: #9A3412; font-size: 14px; font-weight: 600;">🔗 Your founding member perks</p>
-            <ul style="margin: 12px 0 0; padding-left: 20px; color: #7C2D12; font-size: 14px; line-height: 1.8;">
+          <div style="background: #FFF1F0; border: 1px solid #FECACA; border-radius: 16px; padding: 20px; margin: 24px 0;">
+            <p style="margin: 0; color: #991B1B; font-size: 14px; font-weight: 600;">🔗 Your founding member perks</p>
+            <ul style="margin: 12px 0 0; padding-left: 20px; color: #7F1D1D; font-size: 14px; line-height: 1.8;">
               <li>40% off your plan — locked in forever</li>
               <li>Access before public launch in June 2026</li>
               <li>Direct line to the founders</li>
@@ -73,11 +73,11 @@ export async function POST(req: NextRequest) {
             Voice-first. No laptop. No paperwork. Just your phone and your skills.
           </p>
 
-          <a href="https://fldwrk.ai" style="display: inline-block; background: #F97316; color: #fff; font-weight: 900; font-size: 15px; padding: 14px 28px; border-radius: 12px; text-decoration: none;">See the App Preview →</a>
+          <a href="https://fldwrk.ai" style="display: inline-block; background: #E8352A; color: #fff; font-weight: 900; font-size: 15px; padding: 14px 28px; border-radius: 12px; text-decoration: none;">See the App Preview →</a>
 
           <p style="margin-top: 40px; color: #9CA3AF; font-size: 13px; border-top: 1px solid #E8E5E0; padding-top: 20px;">
             — The FLDWRK team<br />
-            <a href="https://fldwrk.ai" style="color: #F97316;">fldwrk.ai</a> &nbsp;·&nbsp; Launching June 2026
+            <a href="https://fldwrk.ai" style="color: #E8352A;">fldwrk.ai</a> &nbsp;·&nbsp; Launching June 2026
           </p>
         </div>
       `,
