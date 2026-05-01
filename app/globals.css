@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #F8FAFC;
+  --bg: #F8F8F8;
   --surface: #FFFFFF;
-  --border: #E2E8F0;
-  --text: #0F172A;
-  --text-secondary: #475569;
-  --text-muted: #94A3B8;
-  --blue: #2563EB;
-  --blue-light: #EFF6FF;
-  --blue-mid: #DBEAFE;
+  --border: #EBEBEB;
+  --text: #0A0A0A;
+  --text-secondary: #555555;
+  --text-muted: #AAAAAA;
+  --red: #E8352A;
+  --red-light: #FFF1F0;
+  --red-mid: #FECACA;
 }
 
 * {
@@ -24,14 +24,14 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #1D4ED8, #2563EB, #3B82F6);
+  background: linear-gradient(135deg, #C42D22, #E8352A, #FF4438);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hero-gradient {
-  background: radial-gradient(ellipse 80% 50% at 50% -10%, #eff6ff 0%, transparent 70%);
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, #fff1f0 0%, transparent 70%);
 }
 
 .card-shadow {
@@ -42,8 +42,8 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08), 0 16px 40px rgba(0,0,0,0.06);
 }
 
-.blue-glow {
-  box-shadow: 0 0 0 1px rgba(37,99,235,0.2), 0 8px 32px rgba(37,99,235,0.15);
+.red-glow {
+  box-shadow: 0 0 0 1px rgba(232,53,42,0.2), 0 8px 32px rgba(232,53,42,0.15);
 }
 
 @keyframes float {
@@ -59,5 +59,4 @@ body {
 .float { animation: float 4s ease-in-out infinite; }
 .pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
 
-/* Device frame resets */
 .device-screen { border-radius: inherit; overflow: hidden; }
