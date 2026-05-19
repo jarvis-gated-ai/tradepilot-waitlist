@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 
 /* ─── Types ───────────────────────────────────────────────────── */
-type FormData = { email: string; trade: string; teamSize: string }
+type FormData = { firstName: string; lastName: string; email: string; trade: string; teamSize: string }
 
 /* ─── Data ───────────────────────────────────────────────────── */
 const trades = ['Plumber', 'HVAC Tech', 'Electrician', 'General Contractor', 'Roofer', 'Painter', 'Landscaper', 'Other']
@@ -872,6 +872,29 @@ export default function Home() {
 
               <div className="bg-white border border-[#E8E5E0] rounded-3xl p-8 card-shadow">
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
+                      <input
+                        {...register('firstName', { required: 'Required' })}
+                        type="text"
+                        placeholder="Mike"
+                        className="w-full bg-[#F8F8F8] border border-[#E8E5E0] rounded-xl px-4 py-3.5 text-gray-800 placeholder-gray-300 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-100 transition-all text-sm"
+                      />
+                      {errors.firstName && <p className="text-red-400 text-xs mt-1">{errors.firstName.message}</p>}
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold text-gray-700 mb-2">Last Name</label>
+                      <input
+                        {...register('lastName', { required: 'Required' })}
+                        type="text"
+                        placeholder="Torres"
+                        className="w-full bg-[#F8F8F8] border border-[#E8E5E0] rounded-xl px-4 py-3.5 text-gray-800 placeholder-gray-300 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-100 transition-all text-sm"
+                      />
+                      {errors.lastName && <p className="text-red-400 text-xs mt-1">{errors.lastName.message}</p>}
+                    </div>
+                  </div>
+
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">Work Email</label>
                     <input
